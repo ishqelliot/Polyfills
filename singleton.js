@@ -13,9 +13,6 @@ const Singleton = function() {
     }
 }
 
-const obj = new Singleton();
-obj.printCounter();
-obj.increment();
-obj.printCounter();
-const obj2 = new Singleton();
-obj2.printCounter();
+for (let i= 0; i < 5; i++){
+    setTimeout(() => { console.log(i, this)},1000);
+} 
